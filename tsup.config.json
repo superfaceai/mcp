@@ -1,0 +1,10 @@
+[
+  {
+    "entry": ["src/index.ts"],
+    "outDir": "dist",
+    "bundle": false,
+    "dts": true,
+    "sourcemap": true,
+    "format": ["esm"]
+  }
+]

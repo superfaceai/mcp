@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "ESNext",
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "module": "NodeNext"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
