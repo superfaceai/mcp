@@ -2,7 +2,7 @@
   {
     "entry": ["src/index.ts"],
     "outDir": "dist",
-    "bundle": false,
+    "bundle": true,
     "dts": true,
     "sourcemap": true,
     "format": ["esm"]

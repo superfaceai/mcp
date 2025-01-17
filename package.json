@@ -1,13 +1,26 @@
 {
-  "name": "superface_mcp_server",
-  "version": "1.0.0",
-  "author": "Ondrej Musil <o@superface.ai>",
+  "name": "@superfaceai/mcp",
+  "version": "0.1.0",
+  "description": "Superface tools for Model Context Protocol",
+  "author": "Superface Team <hello@superface.ai>",
   "license": "MIT",
-  "description": "",
+  "homepage": "https://superface.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superfaceai/mcp.git"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "tools"
+  ],
   "main": "dist/index.js",
   "type": "module",
   "bin": {
-    "superface_mcp": "dist/index.js"
+    "mcp-server-superface": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "scripts": {
     "build": "tsup",
@@ -17,8 +30,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.1.0",
-    "superface": "^0.1.0-rc.7",
-    "zod": "^3.24.1"
+    "superface": "^0.1.0-rc.7"
   },
   "devDependencies": {
     "@types/node": "^22.10.5",
