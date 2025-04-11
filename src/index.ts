@@ -135,6 +135,10 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
 // Start the server
 async function main() {
+  // load and cache tools before starting the server to solve timeout issues on messages
+  const superface = getSuperfaceClient();
+  await superface.getTools();
+
   const transport = new StdioServerTransport();
   await server.connect(transport);
   console.error('Superface MCP Server running on stdio');
